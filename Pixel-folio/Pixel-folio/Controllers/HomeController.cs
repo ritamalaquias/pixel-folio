@@ -20,6 +20,17 @@ namespace Pixel_folio.Controllers
 
         public IActionResult Index()
         {
+            //for dynamic title
+            if(DateTime.Now.Hour < 12)
+            {
+                ViewBag.Hello = "Good morning!";
+            }
+            else if(DateTime.Now.Hour < 18)
+            {
+                ViewBag.Hello = "Good afternoon!";
+            }
+            ViewBag.Hello = "Good night!";
+
             return View();
         }
 
