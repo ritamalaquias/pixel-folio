@@ -12,17 +12,22 @@ for details on configuring this project to bundle and minify static web assets. 
     --padding-bottom-big: 8%;
     --capital-letters: uppercase;
     --square-border: 2px solid var(--highlight-color);
+    
 }
 
 .square{
     border: var(--square-border);
+}
+.big-icon{
+    font-size: var(--main-title-size);
+    color: var(--highlight-color);
 }
 
 .p-top {
     padding-top: var(--padding-top-big);
 }
 .p-bottom{
-   padding-bottom: var(--padding-bottom-big);
+    padding-bottom: var(--padding-bottom-big);
 }
 
 h1{
