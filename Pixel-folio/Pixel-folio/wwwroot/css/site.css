@@ -7,26 +7,43 @@ for details on configuring this project to bundle and minify static web assets. 
     --bg-color-darker: #001015;
     --text-color-faded: #5d8694;
     --highlight-color: #00eaff;
-    --main-title-size: 10rem;
+    --main-title-size: 5rem;
+    --padding-top-big: 10%;
+    --padding-bottom-big: 8%;
+    --capital-letters: uppercase;
+    --square-border: 2px solid var(--highlight-color);
+}
+
+.square{
+    border: var(--square-border);
+}
+
+.p-top {
+    padding-top: var(--padding-top-big);
+}
+.p-bottom{
+   padding-bottom: var(--padding-bottom-big);
 }
 
 h1{
     font-size: var(--main-title-size);
+   text-transform: var(--capital-letters);
 }
 
-.bg-img{
-    background-image:url(../images/bg1.png);
+.bg-img {
+    background-image: url(../images/bg1-30.png);
     
 }
 
 body{
+    font-family: Roboto Mono, 'Times New Roman', Times, serif;
     background-color: var(--bg-color);
     color: var(--text-color);
 }
 
 .navbar {
-    font-weight: bold;
-    font-size:11px;
+    
+    font-size:13px;
     text-transform: uppercase;
     align-content: center;
     background-color: var(--bg-color-darker);

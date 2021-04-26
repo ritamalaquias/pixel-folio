@@ -29,8 +29,11 @@ namespace Pixel_folio.Controllers
             {
                 ViewBag.Hello = "Good afternoon!";
             }
-            ViewBag.Hello = "Good night!";
-
+            else
+            {
+                ViewBag.Hello = "Good night!";
+            }
+            
             return View();
         }
 
